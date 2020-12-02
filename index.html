@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nifty Rose</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<link href="//db.onlinewebfonts.com/c/e55e9079ee863276569c8a68d776ef04?family=Futura+Md+BT" rel="stylesheet" type="text/css"/>
+<style>
+                    body {
+                      display: grid;
+                      grid-template-columns: auto 30% auto 30% auto;
+                      grid-template-rows: 20% auto 20%;
+                      margin: 0;
+                      height: 100vh;
+                      font-family: sans-serif;
+                      color: #888;
+                      background-image: url("photos-landpage/pink.png");
+                      overflow: hidden;
+                    }
+
+                    img{
+                      width: 20%;
+                    }
+
+                    .rose {
+                      width: 30%;
+                    }
+
+                    .cta-button
+                    {
+                      width: 100%;
+                      height: auto;
+                      z-index: 1;
+                    }
+                    .cta-gb
+                    {
+                      grid-column: 4 / 5;
+                      grid-row: 2 / 3;
+                    }
+                    .cta-ml
+                    {
+                      grid-column: 2 / 3;
+                      grid-row: 2 / 3;
+                    }
+                    .cta-ml:hover ~ .bg-ml
+                    {
+                      opacity: 1;
+                    }
+                    .cta-gb:hover ~ .bg-gb
+                    {
+                      opacity: 1;
+                    }
+                    .cta-button > a
+                    {
+                      display: block;
+                      background: no-repeat center;
+                      background-size: contain;
+                      width: 100%;
+                      height: 100%;
+                      transition: width 0.2s, height 0.2s, margin 0.2s;
+                    }
+                    .cta-ml > a
+                    {
+                      background-image: url("photos-landpage/image.png");
+                    }
+                    .cta-gb > a
+                    {
+                      background-image: url("photos-landpage/car.png");
+                    }
+                    .cta-button > a:hover
+                    {
+                      margin-left: -20%;
+                      margin-top: -30%;
+                      width: 140%;
+                      height: 140%;
+                    }
+                    .faux-bg
+                    {
+                      grid-column: 1 / 6;
+                      grid-row: 1 / 4;
+                      background-image: #ddd;
+                      z-index: 0;
+                      opacity: 0;
+                      background-size: cover;
+                      transition: opacity 0.2s;
+                    }
+                    .bg-ml
+                    {
+                      background-image: url("photos-landpage/clothes.gif");
+                    }
+                    .bg-gb
+                    {
+                      background-image: url("photos-landpage/new burn.gif");
+                      background-position: center;
+                    }
+                    #page-title
+                    {
+                      grid-column: 2 / 5;
+                      grid-row: 1 / 1;
+                      display: flex;
+                      justify-content:  center;
+                      align-items: center;
+                    }
+                     #page-middle
+                      {
+                      grid-column: 2 / 5;
+                      grid-row: 1 / 4;
+                      display: flex;
+                      justify-content:  center;
+                      align-items: center;
+                      }
+
+                    @media only screen and (max-width: 800px)
+                    {
+                      body {
+                            grid-template-columns: 100%;
+                            grid-template-rows: 10vh 5% 50vh 5% 50vh;
+                      }
+                      #page-title
+                      {
+                            grid-column: 1 / 1;
+                            grid-row: 1 / 1;
+                      }
+                       #page-middle
+                      {
+                            height:200px;
+                            display:flex;
+                            flex-direction:column;
+                            justify-content:center;
+                            text-align:center;
+                            max-height:100px;
+                            max-width:100%;
+                      }
+                      .faux-bg
+                      {
+                            grid-column: 1 / 1;
+                            grid-row: 1 / 6;
+                      }
+                      .cta-gb
+                      {
+                            grid-column: 1 / 1;
+                            grid-row: 3 / 4;
+                      }
+                      .cta-ml
+                      {
+                            grid-column: 1 / 1;
+                            grid-row: 5 / 6;
+                      }
+                      /* suppress hovering for mobile devices */
+                      .cta-button > a:hover
+                      {
+                            margin-left: 0;
+                            margin-top: 0;
+                            width: 100%;
+                            height: 100%;
+                      }
+                    }
+        
+            </style>
+
+</head>
+<body>
+<div id="page-title"><img class="rose" src="subpages/product-pages/NFxtext.png"></div>
+<div id="page-middle"><img src="photos-landpage/sssss.png"></div>
+<div class="cta-button cta-ml" onmouseover="if (!window.__cfRLUnblockHandlers) return false; onButtonHover('ML')" onmouseout="if (!window.__cfRLUnblockHandlers) return false; onButtonMouseOut()" data-cf-modified-63021f37d5f70960b5c5c660-="">
+<a href="subpages/boutique/boutique.html" target="_self" rel="noopener noreferrer"></a>
+</div>
+<div class="cta-button cta-gb" onmouseover="if (!window.__cfRLUnblockHandlers) return false; onButtonHover('GB')" onmouseout="if (!window.__cfRLUnblockHandlers) return false; onButtonMouseOut()" data-cf-modified-63021f37d5f70960b5c5c660-="">
+
+<a href="subpages/product-pages/kuruma.html" target="_self" rel="noopener noreferrer"></a>
+</div>
+<div class="faux-bg bg-ml"></div>
+<div class="faux-bg bg-gb"></div>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="63021f37d5f70960b5c5c660-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"5d60cb0bcdd0ccd2","r":1,"version":"2020.9.1","si":10}'></script>
+</body>
+</html>

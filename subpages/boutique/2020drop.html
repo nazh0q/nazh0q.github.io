@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Nifty Rose</title>
+  <link href="2020.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.25/default/snipcart.css" />
+</head>
+
+<body>
+	<a href="../../index.html"><img class="rose" src='../product-pages/NFxtext.png' alt='' /></a>
+  <p>&#8607; click on me to go back to the main page ;) &#8607;</p>
+  <div class="text-center">
+  <button class="snipcart-checkout">
+    <img src="https://img.icons8.com/material-rounded/48/000000/shopaholic.png"/>
+    <br>
+    <span class="snipcart-items-count cart-text"></span>
+    <span class="snipcart-total-price cart-text">$0.00</span>
+  </button>
+  </div>
+
+  <ul>
+  <li class="yaba"><a href="product29.html"><img class="img" src="css/202059.png" alt=""></a></a></li>
+  <li class="yaba"><a href="product30.html"><img class="img" src="../product-pages/products/202050-removebg-preview.png" alt=""></a></li>
+  <li class="yaba"><a href="product31.html"><img class="img" src="../product-pages/products/202051-removebg-preview.png" alt=""></a></li>
+  <li class="yaba"><a href="product32.html"><img class="img" src="../product-pages/products/202052-removebg-preview.png" alt=""></a></li>
+  <li class="yaba"><a href="product33.html"><img class="img" id="skirt" src="../product-pages/products/202053-removebg-preview.png" alt=""></a></li>
+  <li class="yaba"><a href="product34.html"><img class="img" src="../product-pages/products/202054-removebg-preview.png" alt=""></a></li>
+  <li class="yaba"><a href="product35.html"><img class="img" src="../product-pages/products/202055-removebg-preview.png" alt=""></a></li>
+  <li class="yaba"><a href="product36.html"><img class="img" src="../product-pages/products/202057-removebg-preview.png" alt=""></a></li>
+  <li class="yaba"><a href="product37.html"><img class="img" src="../product-pages/products/202058-1-removebg-preview.png" alt=""></a></li>
+  <li class="yaba"><a href="product38.html"><img class="img" src="../product-pages/products/202061-removebg-preview.png" alt=""></a></li>
+  <li class="yaba"><a href="product39.html"><img class="img" id="top" src="../product-pages/products/202060__1_-removebg-preview.png" alt=""></a></li>
+  <li class="yaba"><a href="product40.html"><img class="img" id="black" src="../product-pages/products/202062-removebg-preview.png" alt=""></a></li>
+  <li class="yaba"><a href="product41.html"><img class="img" id="sweater" src="../product-pages/products/202065-removebg-preview.png" alt=""></a></li>
+  <li class="yaba"><a href="product42.html"><img class="img" src="../product-pages/products/202066-removebg-preview.png" alt=""></a></li>
+  <li class="yaba"><a href="product43.html"><img class="img" src="../product-pages/products/202067-removebg-preview.png" alt=""></a></li>
+</ul>
+
+<footer id="landing-footer" class="clearfix">
+        <div class="row clearfix">
+
+            <p id="copyright" class="col-2">Important Links: <a href="policies.html">Nifty Rose Policy|</a><a href="contact.html">Contact Page|</a> <a href="faqs.html">F.A.Qs.</a></p>
+</footer>
+
+<div class="notify bounceInRight animated"></div>
+
+<div hidden id="snipcart" data-api-key="YmE3MzZjOGYtZDYyOC00NmUzLWEyMTYtZjA0MmYyN2Y0ODk2NjM3Mzc4ODIxOTQ1OTcwNzQ3"></div>
+<script async src="https://cdn.snipcart.com/themes/v3.0.25/default/snipcart.js"></script>
+<script>
+  let msgNotify = [' Free shipping on orders over $75!'],
+		notify = document.querySelector('.notify');
+
+window.addEventListener('load', function() {
+	// for(var i = 0; i < msgNotify.length; i++) {
+		notify.innerHTML = msgNotify[Math.floor(Math.random() * msgNotify.length)];
+		notify.style.display = "block";
+	// }
+});
+
+let notifyInterval= setInterval( nInterval, 5000 ),
+		notifyTimeOut = setTimeout( nTimeOut, 5500 );
+	
+function nInterval() {
+	notify.classList.remove('bounceInRight');
+	notify.classList.add('fadeOutUp');
+}
+
+function nTimeOut() {
+	clearInterval(notifyTimeOut);
+}
+</script>
+</body>
+</html>
