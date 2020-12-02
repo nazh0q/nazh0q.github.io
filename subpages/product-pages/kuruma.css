@@ -184,11 +184,21 @@ li:nth-child(2n-1) {
   background-image: url(NFx.png);
 }
 .rose {
-  width: 30%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+  width: 35%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
 }
+.rose:hover {
+  bottom: 0;
+  -webkit-filter: drop-shadow(0 20px 10px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 20px 10px rgba(0, 0, 0, 0.3));
+  transition-property: bottom, filter, -webkit-filter;
+  transition-duration: 0.3s;
+}
+
 .wap {
   position: absolute;
   width: 40%;
@@ -211,16 +221,16 @@ p {
   transform: translateX(-50%);
   width: 80%;
   bottom: -15%;
-  -webkit-filter: drop-shadow(0 50px 20px rgba(0, 0, 0, 0.2));
-  filter: drop-shadow(0 50px 20px rgba(0, 0, 0, 0.2));
+  -webkit-filter: drop-shadow(0 50px 20px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0 50px 20px rgba(0, 0, 0, 0.4));
   transition-property: bottom, filter, -webkit-filter;
   transition-duration: 0.3s;
 }
 
-img:hover {
+#shadows:hover {
   bottom: 0;
-  -webkit-filter: drop-shadow(0 50px 20px rgba(0, 0, 0, 0.2));
-  filter: drop-shadow(0 50px 20px rgba(0, 0, 0, 0.2));
+  -webkit-filter: drop-shadow(0 20px 10px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 20px 10px rgba(0, 0, 0, 0.3));
   transition-property: bottom, filter, -webkit-filter;
   transition-duration: 0.3s;
 }
